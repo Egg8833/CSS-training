@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animate Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="06style.css" />
+  </head>
+  <body>
+    <div class="menu">
+      <div class="toggle"><ion-icon name="add"></ion-icon></div>
+      <li style="--i: 0">
+        <a href=""><ion-icon name="home"></ion-icon></a>
+      </li>
+      <li style="--i: 1">
+        <a href=""><ion-icon name="person"></ion-icon></a>
+      </li>
+      <li style="--i: 2">
+        <a href=""><ion-icon name="settings"></ion-icon></a>
+      </li>
+      <li style="--i: 3">
+        <a href=""><ion-icon name="mail"></ion-icon></a>
+      </li>
+      <li style="--i: 4">
+        <a href=""><ion-icon name="key"></ion-icon></a>
+      </li>
+      <li style="--i: 5">
+        <a href=""><ion-icon name="videocam"></ion-icon></a>
+      </li>
+      <li style="--i: 6">
+        <a href=""><ion-icon name="logo-game-controller-b"></ion-icon></a>
+      </li>
+      <li style="--i: 7">
+        <a href=""><ion-icon name="camera"></ion-icon></a>
+      </li>
+    </div>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script>
+      const toggle = document.querySelector(".toggle");
+      const menu = document.querySelector(".menu");
+      toggle.onclick = () => {
+        menu.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
